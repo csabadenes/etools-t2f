@@ -25,6 +25,7 @@
 <link rel="import" href="app-config/etools-app-config.html">
 <link rel="import" href="app-elements/user-data/user-data.html">
 <link rel="import" href="app-elements/page-elements/side-bar-item.html">
+<link rel="import" href="analytics/piwik-element.html">
 
 <link rel="import" href="styles/shared-styles.html">
 <link rel="import" href="styles/page-layout-styles.html">
@@ -130,6 +131,7 @@
 
     </style>
 
+    <piwik-element page="[[route.path]]"></piwik-element>
     <user-data permissions="{{permissions}}" user="{{user}}"></user-data>
     <et2f-settings notifications="{{notifications}}"></et2f-settings>
 
